@@ -1,0 +1,153 @@
+/* Colours
+DAD7CD - Light beige
+A3B18A - Light green
+588157 - Green
+3A5A40 - Dark green
+344E41 - Deep green
+*/
+
+body {
+    margin: 10% 0px;
+    font-family: kiwi maru, serif;
+    color: #000000;
+    background-color: #ffffff00;
+}
+
+  /* change the scrollbar color */
+  body {
+    text-align: center;
+    --sb-track-color: #ffffff;
+    --sb-thumb-color: #000000;
+    --sb-size: 16px;
+    }
+    
+    body::-webkit-scrollbar {
+    width: var(--sb-size)
+    }
+    
+    body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 50px;
+    }
+    
+    body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 50px;
+    border: 4px solid #ffffff;
+    }
+    
+    @supports not selector(::-webkit-scrollbar) {
+    body {
+    scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+    }
+    }
+
+h1, h3, h4, h5, h6 {
+    font-family: kiwi maru, serif;
+    font-size: 3em;
+    text-align: center;
+}
+
+h2 {
+    font-family: kiwi maru, serif;
+    font-size: 1.7em;
+    text-align: center;
+    margin: 20px auto;
+    width: 50%;
+}
+
+p {
+    font-family: kiwi maru, serif;
+    font-size: 1.2em;
+    margin: 20px auto;
+}
+
+blockquote {
+    font-family: kiwi maru, serif;
+    font-size: 1em;
+    font-style: italic;
+    margin: 20px auto;
+    width: 50%;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(34, 34, 34, 0.445) 5px 5px 6px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff00;
+    -webkit-backdrop-filter: blur( 9.5px );
+    backdrop-filter: blur( 9.5px );
+    border-radius: 10px;
+}
+
+li {
+    display: inline-block;
+    margin: 0 20px;
+    margin-top: 10px;
+}
+
+li a {
+    font-family: kiwi maru, serif;
+    font-size: 1.1em;
+    font-style: bold;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    border-radius: 50px;
+    padding-top: 10px;
+    color: #000000;
+    
+}
+
+li a:hover {
+    background-color: #000000;
+    padding-top: 10px;
+    color: #ffffff;
+}
+
+ /* Dashed border */
+ hr.dashed {
+    border-top: 3px dashed black;
+  }
+  
+  /* Dotted border */
+  hr.dotted {
+    border-top: 3px dotted black;
+  }
+  
+  /* Solid border */
+  hr.solid {
+    border-top: 3px solid black;
+  }
+  
+  /* Rounded border */
+  hr.rounded {
+    border-top: 8px solid black;
+    border-radius: 5px;
+  }
+
+  iframe {
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: rgba(34, 34, 34, 0.445) 5px 5px 6px;
+  }
